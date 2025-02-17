@@ -16,7 +16,7 @@ const Conversation = () => {
     useEffect(() => {
         const getConversations = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/user", {
+                const res = await axios.get("https://my-awesome-chat-app.onrender.com/api/user", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

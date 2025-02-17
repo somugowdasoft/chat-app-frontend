@@ -14,7 +14,7 @@ const MessageInput = () => {
     // Function to send a message to the backend API
     const sendMessage = async (message) => {
         try {
-            const res = await axios.post(`http://localhost:5000/api/message/send/${selectedConversation._id}`, { message },
+            const res = await axios.post(`https://my-awesome-chat-app.onrender.com/api/message/send/${selectedConversation._id}`, { message },
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

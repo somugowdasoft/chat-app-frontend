@@ -16,7 +16,7 @@ const Signup = () => {
 
         const user = { name, email, password, gender }
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/signup", user, {
+            const res = await axios.post("https://my-awesome-chat-app.onrender.com/api/auth/signup", user, {
                 headers: {
                     "Content-Type": "application/json"
                 }
